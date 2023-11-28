@@ -2,91 +2,111 @@
 /* You can add global styles to this file, and also import other style files */
 
 @font-face {
-    font-family: IRANSansWeb;
-    src: url("/assets/fonts/IRANSansWeb.woff2");
-  }
-  body {
-    font-family: IRANSansWeb;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-  }
-  
-  @font-face {
-    font-family: IRANSansWeb;
-    font-style: normal;
-    font-weight: bold;
-    src: url("/assets/fonts/IRANSansWeb_Bold.woff2");
-  }
-  @font-face {
-    font-family: IRANSansWeb;
-    font-style: normal;
-    font-weight: 500;
-    src: url("/assets/fonts/IRANSansWeb.woff2");
-  }
-  @font-face {
-    font-family: IRANSansWeb;
-    font-style: normal;
-    font-weight: 300;
-    src: url("/assets/fonts/IRANSansWeb.woff2");
-  }
-  @font-face {
-    font-family: IRANSansWeb;
-    font-style: normal;
-    font-weight: 200;
-    src: url("/assets/fonts/IRANSansWeb.woff2");
-  }
-  
-  @font-face {
-    font-family: IRANSansWeb;
-    src: url("/assets/fonts/IRANSansWebNum.woff2");
-    font-weight: 400;
-  }
-  
-  .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    box-sizing: border-box;
-  }
-  
-  @media (min-width: 576px) {
-    .container {
-      width: 100%;
-    }
-  }
-  @media (min-width: 768px) {
-    .container {
-      width: 100%;
-    }
-  }
-  @media (min-width: 992.8px) {
-    .container {
-      width: 100%;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1140px;
-    }
-  }
-  @media (min-width: 1400px) {
-    .container {
-      width: 1320px;
-    }
-  }
-  html,
-  body {
-    font-family: IRANSansWeb;
-    overflow-x: hidden;
+  font-family: IRANSansWeb;
+  src: url("/assets/fonts/IRANSansWeb.woff2");
+}
+body {
+  font-family: IRANSansWeb;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
-.logo_type
-{
-  background-image: url('/assets/images/logo/logo.png');
+@font-face {
+  font-family: IRANSansWeb;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/assets/fonts/IRANSansWeb_Bold.woff2");
+}
+@font-face {
+  font-family: IRANSansWeb;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/IRANSansWeb.woff2");
+}
+@font-face {
+  font-family: IRANSansWeb;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/fonts/IRANSansWeb.woff2");
+}
+@font-face {
+  font-family: IRANSansWeb;
+  font-style: normal;
+  font-weight: 200;
+  src: url("/assets/fonts/IRANSansWeb.woff2");
+}
+
+@font-face {
+  font-family: IRANSansWeb;
+  src: url("/assets/fonts/IRANSansWebNum.woff2");
+  font-weight: 400;
+}
+
+.container {
   width: 100%;
-  background-repeat: no-repeat;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992.8px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+html,
+body {
+  font-family: IRANSansWeb;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+p,
+legend,
+ul,
+li,
+ol,
+fieldset,
+dd,
+dt,
+dl {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
