@@ -1,2 +1,5 @@
 *.css
 *.css.map
+node_modules/
+.vscode/
+deploy.js
