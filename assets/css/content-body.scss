@@ -88,3 +88,32 @@
     background-size: cover;
   }
 }
+
+@media (max-width: 992.8px) {
+
+  .content-body {
+    display: flex;
+    margin: 32px 0;
+    flex-direction: column;
+    gap: 16px;
+    article{
+      h3{
+        font-size: 20px;
+      }
+      p{
+        margin: 16px 0;
+        font-size: 14px;
+      }
+    }
+    ul{
+      margin-left: auto;
+      gap: 12px;
+      li{
+        font-size: 14px;
+      }
+    }
+    &::before{
+      height: 470px;
+    }
+  }
+}
