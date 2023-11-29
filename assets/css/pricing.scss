@@ -1,1 +1,85 @@
-@import 'main';
+@import "main";
+@import "footer";
+@import "header";
+h1 {
+  color: #7f56d9;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+article {
+  h2 {
+    color: #101828;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 12px 0;
+  }
+  p {
+    color: #667085;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
+.pricing-price {
+  margin-bottom: 64px;
+  ul {
+    display: flex;
+    gap: 32px;
+    .card{
+      border-radius: 16px;
+      border: #eaecf0;
+      box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03),
+        0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+        flex: 1 0 30%;
+        padding: 16px;
+    }
+    ol{
+      list-style: none;
+      li{
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.pricing-plan {
+  border-radius: 16px;
+  background: #f9fafb;
+  padding: 48px 32px;
+  margin-bottom: 32px;
+  h2 {
+    color: #101828;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  p {
+    color: #101828;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    li {
+    }
+  }
+}
