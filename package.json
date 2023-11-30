@@ -4,6 +4,8 @@
   "description": "ir megabuild website",
   "main": "index.js",
   "scripts": {
+    "serve": "node server.js",
+    "deploy": "node deploy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,9 @@
   "homepage": "https://github.com/mega-build/ir-megabuild-website#readme",
   "devDependencies": {
     "ftp-deploy": "^2.4.5",
-"live-server": "^1.2.2"
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
   }
 }
