@@ -2,7 +2,7 @@
 @import "content-body";
 @import "header";
 @import "footer";
-
+@import "online";
 section {
   &:nth-child(2) {
     &::before {
@@ -85,60 +85,6 @@ section {
     }
   }
 }
-.online {
-  background-image: url("../images/icons/p-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 8px;
-  margin-bottom: 80px;
-  padding: 40px 0;
-  h2 {
-    color: #fff;
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    margin-bottom: 16px;
-  }
-  article {
-    h3 {
-      color: #fff;
-      text-align: center;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 28px;
-    }
-    p {
-      color: #fff;
-      text-align: center;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28px;
-      width: 70%;
-      display: block;
-      margin: 24px auto;
-    }
-  }
-  a {
-    border-radius: 8px;
-    background: #fff;
-    color: #7f56d9;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: fit-content;
-    margin: auto;
-    padding: 10px 16px;
-  }
-}
 
 @media (max-width: 992.8px) {
   section {
@@ -146,22 +92,22 @@ section {
       direction: rtl;
     }
   }
-  .videos{
+  .videos {
     padding: 32px 0;
-    ul{
+    ul {
       flex-direction: column;
-      li{
-        video{
+      li {
+        video {
           height: inherit;
         }
       }
     }
   }
-  .online{
+  .online {
     margin-bottom: 32px;
     padding: 20px 16px;
-    article{
-      p{
+    article {
+      p {
         width: 100%;
       }
     }
