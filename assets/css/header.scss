@@ -1,6 +1,13 @@
 
 header {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  u{
+    flex: 0 0 10%;
+  }
     nav {
+      flex: 0 0 80%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -53,3 +60,12 @@ header {
     }
   }
   
+  .logo_type {
+    background-image: url("../images/icons/black-text-logo.svg");
+    width: 145.492px;
+    height: 54.09px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
