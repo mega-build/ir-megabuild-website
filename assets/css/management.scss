@@ -1,1 +1,122 @@
-@import 'main';
+@import "main";
+@import "header";
+@import "footer";
+@import "content-body";
+
+.content-body {
+  article {
+    grid-area: span 4;
+    h2 {
+      color: #101828;
+      text-align: right;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+    }
+  }
+  &::before {
+    height: 400px;
+  }
+}
+.header-banner {
+  background-color: #e1ecf7;
+  h1 {
+    color: #4a8dd0;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    &::after {
+      background: url("../../assets/images/executive-management.jpg");
+      width: 50%;
+      height: 100%;
+      background-position: left;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 8px 0 0 8px;
+      background-size: contain;
+    }
+  }
+  article {
+    h2 {
+      color: #101828;
+      text-align: right;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      width: 40%;
+    }
+    p {
+      color: #101828;
+      text-align: justify;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+    }
+  }
+}
+
+section {
+  &:nth-child(2) {
+    &::before {
+      background-image: url("../images/em-1.svg");
+    }
+  }
+  &:nth-child(3) {
+    direction: ltr;
+    &::before {
+      background-image: url("../images/em-2.svg");
+    }
+  }
+  &:nth-child(4) {
+    &::before {
+      background-image: url("../images/em-3.svg");
+    }
+  }
+  &:nth-child(5) {
+    direction: ltr;
+
+    &::before {
+      background-image: url("../images/em-4.svg");
+    }
+  }
+  &:nth-child(6) {
+    &::before {
+      background-image: url("../images/em-5.svg");
+    }
+  }
+  &:nth-child(7) {
+    direction: ltr;
+
+    &::before {
+      background-image: url("../images/em-6.svg");
+    }
+  }
+  &:nth-child(8) {
+    &::before {
+      background-image: url("../images/em-7.svg");
+    }
+  }
+  &:nth-child(9) {
+    direction: ltr;
+
+    &::before {
+      background-image: url("../images/em-8.svg");
+    }
+  }
+}
+
+@media (max-width: 992.8px) {
+  .content-body {
+    &::before {
+      height: 260px;
+      background-size: contain;
+    }
+  }
+}
