@@ -1,1 +1,95 @@
-@import 'main';
+@import "main";
+@import "header";
+@import "footer";
+@import "content-body";
+@import "online";
+
+.content-body {
+  article {
+    grid-area: span 4;
+    h2 {
+      color: #101828;
+      text-align: right;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+    }
+  }
+  &::before {
+    height: 400px;
+  }
+}
+.header-banner {
+  background-color: #faedcb;
+  h1 {
+    color: #eaa115;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    &::after{
+      background: url("../../assets/images/financial-management.jpg");
+      width: 50%;
+      height: 100%;
+      background-position: left;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 8px 0 0 8px;
+      background-size: contain;
+    }
+  }
+  article {
+    h2 {
+      color: #101828;
+      text-align: right;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p {
+      color:  #101828;
+      text-align: justify;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}
+
+section {
+  &:nth-child(2) {
+    &::before {
+      background-image: url("../images/fm-1.svg");
+    }
+  }
+  &:nth-child(3) {
+    direction: ltr;
+    &::before {
+      background-image: url("../images/fm-2.svg");
+    }
+  }
+  &:nth-child(4) {
+    &::before {
+      background-image: url("../images/fm-3.svg");
+    }
+  }
+  &:nth-child(5) {
+    &::before {
+      background-image: url("../images/fm-4.svg");
+    }
+  }
+}
+
+@media (max-width: 992.8px) {
+  .content-body {
+    &::before {
+      height: 260px;
+      background-size: contain;
+    }
+  }
+}
