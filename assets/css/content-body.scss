@@ -89,7 +89,6 @@
   }
 }
 
-
 .header-banner {
   background-color: #53389e;
   border-radius: 8px;
@@ -144,6 +143,16 @@
     width: 40%;
     text-align: justify;
   }
+  h2 {
+    color: #101828;
+    text-align: right;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 35%;
+  }
+
   a {
     padding: 10px 16px;
     display: inline-block;
@@ -168,8 +177,6 @@
     }
   }
 }
-
-
 
 @media (max-width: 992.8px) {
   .content-body {
@@ -204,6 +211,43 @@
     &::before {
       height: 260px;
       background-size: contain;
+    }
+  }
+  .header-banner {
+    padding: 16px;
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      &::before,
+      &::after {
+        background: none;
+        content: none;
+      }
+    }
+
+    p {
+      display: block;
+      width: 100%;
+    }
+    a {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    article {
+      h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
     }
   }
 }
