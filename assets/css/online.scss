@@ -85,3 +85,21 @@
     padding: 10px 16px;
   }
 }
+
+@media (max-width: 992.8px) {
+  .online {
+    margin-bottom: 32px;
+    padding: 20px 16px;
+    h2 {
+      &::after,
+      &::before {
+        content: none;
+      }
+    }
+    article {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}

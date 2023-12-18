@@ -103,13 +103,9 @@ section {
       }
     }
   }
-  .online {
-    margin-bottom: 32px;
-    padding: 20px 16px;
-    article {
-      p {
-        width: 100%;
-      }
-    }
+
+  .content-body::before {
+    height: 430px;
+    background-size: cover;
   }
 }
