@@ -1,0 +1,100 @@
+.online {
+  background-image: url("../images/icons/p-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  margin-bottom: 80px;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+.online h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+.online h2::before {
+  content: "";
+  background: url("../../assets/images/online-consulting-pattern-shape.svg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  top: 0;
+  background-position: left;
+  z-index: 2;
+}
+.online h2::after {
+  content: "";
+  background: url("../../assets/images/online-consulting-pattern-line.svg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  top: 0;
+  background-position: right;
+  z-index: 2;
+}
+.online article {
+  z-index: 10;
+  position: relative;
+}
+.online article h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.online article p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  width: 70%;
+  display: block;
+  margin: 24px auto;
+}
+.online a {
+  z-index: 10;
+  position: relative;
+  border-radius: 8px;
+  background: #fff;
+  color: #7f56d9;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 16px;
+}
+
+@media (max-width: 992.8px) {
+  .online {
+    margin-bottom: 32px;
+    padding: 20px 16px;
+  }
+  .online h2::after, .online h2::before {
+    content: none;
+  }
+  .online article p {
+    width: 100%;
+  }
+}/*# sourceMappingURL=online.css.map */
